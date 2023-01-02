@@ -12,9 +12,9 @@ def hello(name: str, idade: int, display_idade: bool = True):
         print(f'{idade}')
 
 @app.command()
-def goodbye():
+def commit(data: str):
     os.system("git add .")
-    os.system("git commit -m \'olaola\' --date \'08/20/2023\'")
+    os.system(f"git commit -m \'olaola\' --date \'{data}\'")
     os.system("git push")
 
 if __name__ == "__main__":
