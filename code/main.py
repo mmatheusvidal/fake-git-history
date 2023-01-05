@@ -16,7 +16,7 @@ def commit(data: str):
     os.system(f"echo \'{data}\' > foo.txt")
     os.system("git add .")
     os.system(f'git commit --quiet -m \"fake commit\" --date \"{data}\"')
-    os.system("git push")
+    os.system("git push --quiet")
 
 if __name__ == "__main__":
     app()
