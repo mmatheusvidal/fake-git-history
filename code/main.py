@@ -12,7 +12,6 @@ def hello(name: str, idade: int, display_idade: bool = True):
 @app.command()
 def goodbye():
     os.system("git add .")
-    
     os.system("git commit -m teste")
     os.system("git push")
 
