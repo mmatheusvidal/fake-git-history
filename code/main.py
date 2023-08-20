@@ -14,7 +14,7 @@ def hello(name: str, idade: int, display_idade: bool = True):
 @app.command()
 def goodbye():
     os.system("git add .")
-    os.system("git commit -m \'teste\' --date \'08/20/2023\'")
+    os.system("git commit -m \'olaola\' --date \'08/20/2023\'")
     os.system("git push")
 
 if __name__ == "__main__":
