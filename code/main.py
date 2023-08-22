@@ -3,6 +3,8 @@ import os
 
 app = typer.Typer()
 
+# --date mm/dd/aaaa
+
 @app.command()
 def hello(name: str, idade: int, display_idade: bool = True):
     print(f'É nóis {name}')
@@ -12,7 +14,7 @@ def hello(name: str, idade: int, display_idade: bool = True):
 @app.command()
 def goodbye():
     os.system("git add .")
-    os.system("git commit -m teste")
+    os.system("git commit -m \'teste\'")
     os.system("git push")
 
 if __name__ == "__main__":
